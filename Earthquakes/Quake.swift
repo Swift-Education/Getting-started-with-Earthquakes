@@ -11,6 +11,7 @@ struct Quake {
     let magnitude: Double
     let place: String
     let time: Date
+    let tsunami: Int
     let code: String
     let detail: URL
 }
@@ -25,6 +26,7 @@ extension Quake: Decodable {
         case magnitude = "mag"
         case place
         case time
+        case tsunami
         case code
         case detail
     }
@@ -34,12 +36,14 @@ extension Quake: Decodable {
         let rawMagnitude = try? values.decode(Double.self, forKey: .magnitude)
         let rawPlace = try? values.decode(String.self, forKey: .place)
         let rawTime = try? values.decode(Date.self, forKey: .time)
+        let rawTsunami = try? values.decode(Int.self, forKey: .tsunami)
         let rawCode = try? values.decode(String.self, forKey: .code)
         let rawDetail = try? values.decode(URL.self, forKey: .detail)
         
         guard let magnitude = rawMagnitude,
               let place = rawPlace,
               let time = rawTime,
+              let tsunami = rawTsunami,
               let code = rawCode,
               let detail = rawDetail
         else {
@@ -49,6 +53,7 @@ extension Quake: Decodable {
         self.magnitude = magnitude
         self.place = place
         self.time = time
+        self.tsunami = tsunami
         self.code = code
         self.detail = detail
     }
