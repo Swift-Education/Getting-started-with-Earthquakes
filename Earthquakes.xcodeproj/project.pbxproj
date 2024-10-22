@@ -16,6 +16,7 @@
 		B55AD3022CC6B4CE0040F59F /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD2FF2CC6B4CE0040F59F /* Quake.swift */; };
 		B55AD3032CC6B4CE0040F59F /* QuakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD3002CC6B4CE0040F59F /* QuakeError.swift */; };
 		B55AD3052CC6B4DF0040F59F /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD3042CC6B4DF0040F59F /* GeoJSON.swift */; };
+		B55AD3072CC744050040F59F /* QuakeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD3062CC744050040F59F /* QuakeLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B55AD2FF2CC6B4CE0040F59F /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
 		B55AD3002CC6B4CE0040F59F /* QuakeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeError.swift; sourceTree = "<group>"; };
 		B55AD3042CC6B4DF0040F59F /* GeoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSON.swift; sourceTree = "<group>"; };
+		B55AD3062CC744050040F59F /* QuakeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				B55AD2FF2CC6B4CE0040F59F /* Quake.swift */,
 				B55AD3002CC6B4CE0040F59F /* QuakeError.swift */,
 				B55AD3042CC6B4DF0040F59F /* GeoJSON.swift */,
+				B55AD3062CC744050040F59F /* QuakeLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			files = (
 				B55AD3052CC6B4DF0040F59F /* GeoJSON.swift in Sources */,
 				B55AD2E42CC6A75B0040F59F /* ContentView.swift in Sources */,
+				B55AD3072CC744050040F59F /* QuakeLocation.swift in Sources */,
 				B55AD2E52CC6A75B0040F59F /* EarthquakesApp.swift in Sources */,
 				B55AD3022CC6B4CE0040F59F /* Quake.swift in Sources */,
 				B55AD3032CC6B4CE0040F59F /* QuakeError.swift in Sources */,
