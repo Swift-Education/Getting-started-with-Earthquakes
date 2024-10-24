@@ -12,7 +12,9 @@ class QuakeClient {
     // 속성을 비동기적으로 만들거나 던지려면 계산된 속성에 대한 명시적 get 구문이 필요합니다.
     var quakes: [Quake] {
         get async throws {
-            fatalError("Unimplemented")
+            let data = try await downloader.httpData(from: feedURL)
+            let allQuakes = try decoder.decode(GeoJSON.self, from: data)
+            return allQuakes.quakes
         }
     }
     // 5. 익명 클로저를 사용하여 속성을 초기화하면 날짜 디코딩 전략을 변경할 수 있습니다.
