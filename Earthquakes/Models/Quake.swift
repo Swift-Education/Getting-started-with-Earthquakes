@@ -14,6 +14,7 @@ struct Quake {
     let tsunami: Int
     let code: String
     let detail: URL
+    var location: QuakeLocation?
 }
 
 
