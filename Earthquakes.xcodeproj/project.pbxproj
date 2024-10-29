@@ -35,6 +35,7 @@
 		B55AD40C2CCB32E00040F59F /* NSCache+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD40B2CCB32E00040F59F /* NSCache+Subscript.swift */; };
 		B55AD40E2CD078B10040F59F /* Quake+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD40D2CD078B10040F59F /* Quake+Preview.swift */; };
 		B55AD4102CD093DA0040F59F /* QuakeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD40F2CD093DA0040F59F /* QuakeDetail.swift */; };
+		B55AD4122CD0B6F50040F59F /* QuakeDetailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AD4112CD0B6F50040F59F /* QuakeDetailMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		B55AD40B2CCB32E00040F59F /* NSCache+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCache+Subscript.swift"; sourceTree = "<group>"; };
 		B55AD40D2CD078B10040F59F /* Quake+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Preview.swift"; sourceTree = "<group>"; };
 		B55AD40F2CD093DA0040F59F /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetail.swift; sourceTree = "<group>"; };
+		B55AD4112CD0B6F50040F59F /* QuakeDetailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetailMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				B55AD3F62CCA96300040F59F /* Quakes.swift */,
 				B55AD3FD2CCA96300040F59F /* ToolbarContent */,
 				B55AD40F2CD093DA0040F59F /* QuakeDetail.swift */,
+				B55AD4112CD0B6F50040F59F /* QuakeDetailMap.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				B55AD4012CCA96300040F59F /* RefreshButton.swift in Sources */,
 				B55AD4022CCA96300040F59F /* ToolbarStatus.swift in Sources */,
 				B55AD40C2CCB32E00040F59F /* NSCache+Subscript.swift in Sources */,
+				B55AD4122CD0B6F50040F59F /* QuakeDetailMap.swift in Sources */,
 				B55AD4032CCA96300040F59F /* DeleteButton.swift in Sources */,
 				B55AD4042CCA96300040F59F /* Quakes.swift in Sources */,
 				B55AD4052CCA96300040F59F /* EditButton.swift in Sources */,
