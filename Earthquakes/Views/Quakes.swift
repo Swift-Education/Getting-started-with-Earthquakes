@@ -8,10 +8,11 @@ The views of the app, which display details of the fetched earthquake data.
 import SwiftUI
 
 struct Quakes: View {
+    @EnvironmentObject var provider: QuakesProvider
+    
     @AppStorage("lastUpdated")
     var lastUpdated = Date.distantFuture.timeIntervalSince1970
 
-    @EnvironmentObject var provider: QuakesProvider
     @State var editMode: EditMode = .inactive
     @State var selectMode: SelectMode = .inactive
     @State var isLoading = false
@@ -23,7 +24,9 @@ struct Quakes: View {
         NavigationView {
             List(selection: $selection) {
                 ForEach(provider.quakes) { quake in
-                    QuakeRow(quake: quake)
+                    NavigationLink(destination: QuakeDetail(quake: quake)) {
+                        QuakeRow(quake: quake)
+                    }
                 }
                 .onDelete(perform: deleteQuakes)
             }
