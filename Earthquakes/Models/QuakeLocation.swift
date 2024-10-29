@@ -25,6 +25,12 @@ struct QuakeLocation: Decodable {
         let latitude: Double
         let longitude: Double
     }
+    
+    init(latitude: Double, longitude: Double) {
+        self.properties = RootProperties(products: Products(origin: [
+            Origin(properties: OriginProperties(latitude: latitude, longitude: longitude))
+        ]))
+    }
 }
 
 extension QuakeLocation.OriginProperties: Decodable {
